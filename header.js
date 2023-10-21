@@ -4,13 +4,17 @@ import "./style.css";
 // este conteúdo será inserido em todas as páginas que importarem este arquivo
 
 document.querySelector("#header").innerHTML = `
-        <button>
-            Sobre Mim
-        </button>
+        <a href="./index.html">
+            <button>
+                Sobre Mim
+            </button>
+        </a>
 
-        <button>
-            Formação
-        </button>
+        <a href="./formacao.html">
+            <button>
+                Formação
+            </button>
+        </a>
 
         <a href="https://ramon-giovani-portfolio.vercel.app/" target="_blank">
             <button>
@@ -18,9 +22,11 @@ document.querySelector("#header").innerHTML = `
             </button>
         </a>
 
-        <button>
-            Contato
-        </button>
+        <a href="./contato.html">
+            <button>
+                Contato
+            </button>
+        </a>
 `;
 
 // captura dos botões e adição de evento de clique para redirecionar para as páginas
