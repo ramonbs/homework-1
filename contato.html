@@ -8,20 +8,50 @@
         <title>Contato</title>
     </head>
     <body id="app">
-        <header id="header"></header>
-        <main id="main"></main>
-        <footer id="footer"></footer>
+        <!-- 
+            // utilizando o innerHTML para inserir o conteúdo HTML no elemento com id header
+            // este conteúdo será inserido em todas as páginas que importarem este arquivo
+         -->
+        <header id="header">
+            <a href="./index.html">
+                <button>Sobre Mim</button>
+            </a>
+
+            <a href="./formacao.html">
+                <button>Formação</button>
+            </a>
+
+            <a
+                href="https://ramon-giovani-portfolio.vercel.app/"
+                target="_blank">
+                <button>Portfólio</button>
+            </a>
+
+            <a href="./contato.html">
+                <button>Contato</button>
+            </a>
+        </header>
+        <main id="main">
+            <form>
+                <label for="name"> Nome: </label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required />
+                <label for="email"> E-mail: </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required />
+                <label for="message"> Mensagem: </label>
+                <textarea
+                    id="message"
+                    name="message"
+                    required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
     </body>
-    <script
-        type="module"
-        src="./header.js"
-        defer
-        ></script>
-
-    <script
-        type="module"
-        defer
-        src="./contato.js"></script>
-
-  
 </html>
